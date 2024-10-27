@@ -1,0 +1,93 @@
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+  direction: ltr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+
+}
+:root {
+  --primary-color: #EE1B5E;
+  --buttons-border-color: #EE1B5E;
+  --section-padding: 20px;
+  --title-size: 50px;
+}
+
+
+/* Forms */
+form{
+  display: flex;
+  flex-direction: column;
+ text-align: right;
+
+}
+.labels{
+  color: #777777;
+  font-size: 1em;
+    margin: 1em 0 4px;
+    font-weight: 700;
+}
+form input{
+  padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    background: #ebf4f8;
+    border: 1px solid #d5dee1;
+    transition: outline .2s ease;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+    transition: 0.3s;
+}
+form input::placeholder{
+  color: #acacac;
+}
+form input:focus{
+  border: 2px solid #1587B2;
+}
+form button{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+}
+/* Visual Editor */
+.ql-snow .ql-editor h2{
+ color: black;
+}
+.ql-toolbar.ql-snow{
+  text-align: left;
+}
+@media(min-width: 768px){
+  .ql-toolbar{
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    width: 20%;
+  }
+}
